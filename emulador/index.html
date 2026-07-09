@@ -6,28 +6,19 @@
 
 <title>GBA Emulator</title>
 
-<link rel="stylesheet" href="data/emulator.css">
-
-<style>
-body {
-  margin: 0;
-  background: #111;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial;
-}
-</style>
+<script>
+var EJS_player = "#game";
+var EJS_core = "gba";
+var EJS_gameName = "Pokemon FireRed";
+var EJS_gameUrl = "../jogos/pokemon-firered.gba";
+var EJS_pathtodata = "data/";
+</script>
 
 </head>
 
-<body>
+<body style="margin:0;background:#111;">
 
-<div id="emulator">
-Carregando emulador...
-</div>
+<div id="game"></div>
 
 <script src="data/loader.js"></script>
 
