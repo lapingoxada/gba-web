@@ -10,7 +10,9 @@
 var EJS_player = "#game";
 var EJS_core = "gba";
 var EJS_gameName = "Pokemon FireRed";
-var EJS_gameUrl = "../jogos/pokemon-firered.gba";
+var jogo = new URLSearchParams(window.location.search).get("game");
+
+var EJS_gameUrl = "../jogos/" + jogo;
 var EJS_pathtodata = "data/";
 </script>
 
