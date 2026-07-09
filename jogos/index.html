@@ -1,6 +1,76 @@
-<div class="card">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<img src="../capas/firered.jpg" width="160">
+<title>Biblioteca GBA</title>
+
+<style>
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    background: #222;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 160px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    background: #4CAF50;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #45a049;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🎮 Biblioteca GBA</h1>
+
+<div class="container">
+
+<div class="card">
+<img src="../capas/firered.jpg" alt="Pokémon FireRed">
 
 <h2>Pokémon FireRed</h2>
 <p>Game Boy Advance</p>
@@ -8,13 +78,10 @@
 <a href="../emulador/index.html?game=pokemon-firered.gba">
 <button>Jogar</button>
 </a>
-
 </div>
 
-
 <div class="card">
-
-<img src="../capas/unbound.jpg" width="160">
+<img src="../capas/unbound.jpg" alt="Pokémon Unbound">
 
 <h2>Pokémon Unbound</h2>
 <p>Game Boy Advance</p>
@@ -22,13 +89,10 @@
 <a href="../emulador/index.html?game=unbound.gba">
 <button>Jogar</button>
 </a>
-
 </div>
 
-
 <div class="card">
-
-<img src="../capas/floraskyrebirth.jpg" width="160">
+<img src="../capas/floraskyrebirth.jpg" alt="Pokémon Flora Sky Rebirth">
 
 <h2>Pokémon Flora Sky Rebirth</h2>
 <p>Game Boy Advance</p>
@@ -36,5 +100,9 @@
 <a href="../emulador/index.html?game=floraskyrebirth.gba">
 <button>Jogar</button>
 </a>
+</div>
 
 </div>
+
+</body>
+</html>
