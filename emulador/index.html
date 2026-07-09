@@ -46,13 +46,18 @@ button {
 
 <h1>🎮 Emulador GBA</h1>
 
-<canvas id="telaJogo" width="240" 
-height="160"></canvas>
+<div id="game"></div>
 
 <input type="file" id="arquivoJogo" accept=".gba">
   
 <script src="teste.js"></script>
 <script src="js/emulador.js"></script>
-  
+<script>
+EJS_player = "#game";
+EJS_core = "gba";
+EJS_pathtodata = "data/";
+</script>
+
+<script src="data/loader.js"></script>  
 </body>
 </html>
