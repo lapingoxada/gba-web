@@ -1,0 +1,1 @@
+Arquivos do emulador GBA.
