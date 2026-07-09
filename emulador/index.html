@@ -2,29 +2,57 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Emulador GBA</title>
+
 <style>
 body {
+  margin: 0;
   background: #111;
   color: white;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   text-align: center;
-  padding: 40px;
 }
-.box {
-  border: 2px solid white;
-  padding: 30px;
+
+h1 {
+  margin-top: 30px;
+}
+
+.tela {
+  width: 480px;
+  max-width: 90%;
+  height: 320px;
+  background: black;
+  margin: 30px auto;
+  border: 3px solid white;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 </style>
+
 </head>
 
 <body>
 
-<div class="box">
 <h1>🎮 Emulador GBA</h1>
-<p>Área do emulador carregada.</p>
+
+<div class="tela">
+  Tela do jogo
 </div>
+
+<button>Carregar jogo</button>
 
 </body>
 </html>
