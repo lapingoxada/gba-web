@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon FireRed</title>
+    <title>Carregando...</title>
 
     <style>
         html, body {
@@ -27,15 +27,25 @@
 <script>
     EJS_player = "#game";
     EJS_core = "gba";
-    EJS_gameName = "Pokemon FireRed";
     EJS_color = "#0064ff";
     EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
 
-    var jogo = new URLSearchParams(window.location.search).get("game");
+ 
+var jogo = new URLSearchParams(window.location.search).get("game");
 
-    EJS_gameUrl = "https://drive.google.com/uc?export=download&id=1MIXtRnOf1-2SnjDzWVPMQFPUhG32tPDd";
+var nomesJogos = {
+    "pokemon-firered.gba": "Pokémon FireRed",
+    "unbound.gba": "Pokémon Unbound",
+    "floraskyrebirth.gba": "Pokémon Flora Sky Rebirth",
+    "zeldaminishcap.gba": "The Legend of Zelda: The Minish Cap"
+};
+
+EJS_gameName = nomesJogos[jogo] || "Biblioteca GBA";
+
+document.title = EJS_gameName;
+
+EJS_gameUrl = "../jogos/" + (jogo || "pokemon-firered.gba");
 </script>
-
 <script>
 window.EJS_DEBUG_XX = true;
 </script>
